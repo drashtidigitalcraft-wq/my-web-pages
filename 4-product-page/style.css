@@ -1,0 +1,243 @@
+    * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }
+    html{
+        scroll-behavior: smooth;
+    }
+    /* -------------------------HEADER CSS START-------------------- */
+    header{
+
+    }
+    .marquee-container{
+        background-color: black;
+        padding: 9.5px;
+        overflow: hidden;
+    }
+    .marquee {
+        display: flex;
+        width: 100%;
+        overflow: hidden;
+    }
+    .marquee-content {
+        display: flex;
+        gap: 90px;
+        white-space: nowrap;
+        animation: scroll-marquee 27s linear infinite;
+        padding: 0 20px 0 20px;
+    }
+    .marquee-content span {
+        color: white;
+        font-size: 17px;
+        font-weight: 400;
+        flex-shrink: 0;
+        font-family: Poppins, sans-serif;
+    }
+    @keyframes scroll-marquee {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+    .container{
+        border: 1px solid red;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 10px 0px 10px 0px;
+    }
+    .container nav{
+        justify-content: space-between;
+        align-items: center;
+    }
+    .container nav .icons{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .container nav .icons .logo{
+        /* border: 1px solid red; */
+        height: 45px;
+        max-width: 210px;
+         margin: 0 auto;
+    }
+     .container nav .logo img{
+        max-width: 100%;
+        height: 100%;
+    }
+    .container nav .icons .cart a {
+        padding:  5px;
+    }
+    .container nav .icons .cart a i{
+        /* border: 1px solid red; */
+        color: #121212;
+        font-size: 17px;
+    }
+     .container nav ul{
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        padding: 10px 0px 0px 0px;
+        /* border: 1px solid red; */
+     }
+      .container nav ul li{
+        list-style: none;
+     }
+      .container nav ul li a{
+        text-decoration: none;
+        color: #121212E6;
+        font-size: 14px;
+        font-family: Poppins, sans-serif;
+      }
+ 
+   
+    /* -------------------------HEADER CSS END-------------------- */
+    /* -------------------------SECTION-1 CSS START-------------------- */
+     .sec-1{
+        background-color: #FDFAF8;
+        margin: 1% 0 0 0; 
+     }
+     .sec-1 .container{
+        display: grid;
+        grid-template-columns: 64% 36%;
+        position: sticky;
+        top: 0;
+     }
+     .sec-1 .container aside{
+        border: 1px solid green;
+        display: grid;
+        grid-template-columns: 20% 80%;
+        position: sticky;
+        top: 0;
+     }
+     .sec-1 .container aside .img-link{
+        /* border: 1px solid yellow; */
+     }
+     .sec-1 .container aside .img-link ul {
+        overflow-y: auto;
+        max-height: 595px;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        scroll-behavior: smooth;
+     }
+     
+     .sec-1 .container aside .img-link ul::-webkit-scrollbar {
+        display: none;
+     }
+     .sec-1 .container aside .img-link ul li{
+        list-style: none;
+        padding: 10px 0px 10px 0px;
+        flex-shrink: 0;
+     }
+     .sec-1 .container aside .main-image{
+        /* border: 1px solid purple; */
+        height: 605px;
+        max-width: 605px;
+        overflow: hidden;
+      
+     }
+     .sec-1 .container aside .main-image img{
+        height: 100%;
+        max-width: 100%;
+        padding: 10px 0px 10px 0px;
+     }
+     .sec-1 .container aside .img-link ul li a img{
+       border-radius: 12px;
+     }
+     .sec-1 .container aside .img-link ul li a img:hover{
+        border: 1px solid black;
+     }
+     .sec-1 .container article{
+        border: 1px solid blue;
+        overflow-y: auto;
+        max-height: 1000px;
+        padding: 10px;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        scroll-behavior: smooth;
+     }
+     .sec-1 .container article::-webkit-scrollbar {
+        display: none;            
+    }
+    .sec-1 .container article h5{
+        font-size: 14px;
+        /* border: 1px solid red; */
+        color: #382929;
+        background-color: #f1f2ee;    
+        font-weight: 900;
+        max-width: 270px;
+        padding: 5px 0px 5px 0px;   
+        border-radius: 5px;
+    }
+    .sec-1 .container article h6{
+        font-size: 13px;
+        color: #382929;
+        background-color: #f1f2ee;    
+        font-weight: 600;
+        max-width: 220px;
+        padding: 5px 0px 5px 0px;   
+        margin: 2% 0 0 0;
+         border-radius: 5px;
+    }
+    .review{
+        /* border: 1px solid red; */
+        display: flex;
+        margin: 4% 0 0 0;
+    }
+     .review img{
+        padding: 0px 7px 0px 0px;
+     }
+     .review h4{
+        color: #382929;
+        font-size: 15px;
+        text-decoration: underline;
+     }
+     .product-title h3{
+        font-size: 35px;
+        color: #121212;
+        font-weight: 500;
+        margin: 4% 0 0 0;
+        font-family: "Fjalla One", sans-serif;
+        text-transform: uppercase;
+     }
+     .product-title p{
+        font-size: 15px;
+        color: #5f5f5f;
+        margin: 2.5% 0 0 0;
+        padding: 0px 110px 0px 0px;
+     }
+     .model-selection h4{
+        font-size: 16px;
+        color: #25211E;
+        font-weight: 800;
+        margin: 0 0 0 0;
+     }
+     .model-selection {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-between;
+        /* border: 1px solid red; */
+        margin: 5% 0 0 0;
+     }
+     .model-selection p{
+        /* border: 1px solid red; */
+        display: flex;
+        padding: 0 0 0 70px;
+    }
+     .model-selection p .model-description{
+        font-size: 12px;
+        color: #382929;
+        font-weight: 600;
+        border-radius: 5px;
+        background-color: #f1f2ee;
+     }
+     .model-selection p img{
+        padding: 0px 0px 0px 0px;
+        height: 14px;
+        width: 14px;
+        background-color: #f1f2ee; 
+         border-radius: 5px;
+     }
+    /* -------------------------SECTION-1 CSS END-------------------- */
